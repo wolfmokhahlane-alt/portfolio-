@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/jpeg" href="pc1.jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>co.events</title>
+</head>
+<body>
+
+  <nav class="navbar">
+    <button class="menu-toggle" onclick="document.querySelector('.navbar ul').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <h1>SPARKLE & CO Event Planners</h1>
+  <div class="p2">
+    <p>Our company aims to create unforgettable experiences in the heart of Lesotho.
+      We are a dynamic events company specializing in a wide range of events and retreats.
+    </p>
+  </div>
+
+  <!-- Logo -->
+  <img id="img1" src="pc2.png" alt="Sparkle and Co Logo">
+
+  <!-- Slideshow -->
+  <div class="slideshow-container">
+    <img class="slide active" src="hiking.webp" alt="Adventure Retreat">
+    <img class="slide" src="pc3.jpg" alt="Event 2">
+    <img class="slide" src="pc4.jpg" alt="Event 3">
+    <img class="slide" src="pc5.jpg" alt="Event 4">
+    <img class="slide" src="pc6.jpg" alt="Event 5">
+    <img class="slide" src="pc9.jpg" alt="Event 6">
+    <img class="slide" src="pc10.webp" alt="Event 7">
+  </div>
+
+  <!-- Vision & Mission -->
+  <section>
+    <h2>Our Vision & Mission</h2>
+    <article>
+      <h4>Vision</h4>
+      <p>The most goal-oriented events planning business in Lesotho, which strives in designing
+        seamless events that bring engagement amongst stakeholders as well as the future generation.
+      </p>
+    </article>
+    <article>
+      <h4>Mission</h4>
+      <p>To create remarkable experiences by providing exceptional entertainment and networking
+        opportunities to all adults and music lovers across Lesotho and beyond.
+      </p>
+    </article>
+  </section>
+
+  <!-- What We Do -->
+  <section>
+    <h2>What We Do</h2>
+    <article>
+      <h4>Adventure Retreats</h4>
+      <p>Hiking, pony trekking, and cultural immersion through Lesotho's breathtaking mountain landscapes.</p>
+    </article>
+    <article>
+      <h4>Corporate Events & Retreats</h4>
+      <p>Strategy sessions, conferences, product launches, and team-building activities in scenic mountain lodges.</p>
+    </article>
+    <article>
+      <h4>Wellness Retreats</h4>
+      <p>Yoga, meditation, and spa weekends designed to restore balance in Lesotho's tranquil rural settings.</p>
+    </article>
+    <article>
+      <h4>Social & Cultural Events</h4>
+      <p>Weddings, birthdays, anniversaries, baby showers, art exhibitions, and heritage celebrations.</p>
+    </article>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section>
+    <h2>Why Choose Sparkle & Co</h2>
+    <article>
+      <h4>Local Expertise</h4>
+      <p>We know Lesotho inside out — from hidden mountain venues to trusted local vendors and caterers.</p>
+    </article>
+    <article>
+      <h4>End-to-End Service</h4>
+      <p>We handle everything from planning and decor to catering and entertainment, so you can enjoy the moment.</p>
+    </article>
+    <article>
+      <h4>Culturally Inspired</h4>
+      <p>Every event we plan celebrates the richness of Basotho culture, craft, and community.</p>
+    </article>
+  </section>
+
+  <!-- Testimonials -->
+ 
+
+  <!-- Call to Action -->
+  <section>
+    <h2>Ready to Plan Your Next Event?</h2>
+    <article>
+      <h4>Get In Touch Today</h4>
+      <p>
+        Whether you have a clear vision or just a dream, we are here to make it happen.
+        Contact us via WhatsApp or Facebook and let's start planning something spectacular.
+      </p>
+      <p style="margin-top: 10px;"><strong>Phone / WhatsApp:</strong> +26658380669  </p>
+      <p><strong>Email:</strong> sparkleandco@events.co.ls</p>
+      <p><strong>Location:</strong> Maseru, Lesotho</p>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Connect with us</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/sparkleandcoevents" target="_blank" class="social-btn facebook" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/26658380669" target="_blank" class="social-btn whatsapp" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Sparkle & Co Event Planners. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let slides = document.querySelectorAll(".slide");
+    let currentSlide = 0;
+    function showSlides() {
+      slides.forEach(slide => slide.classList.remove("active"));
+      slides[currentSlide].classList.add("active");
+      currentSlide = (currentSlide + 1) % slides.length;
+    }
+    setInterval(showSlides, 3000);
+  </script>
+  
+
+</body>
+</html>
